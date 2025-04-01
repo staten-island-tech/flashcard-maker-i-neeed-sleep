@@ -16,14 +16,11 @@ class t:
 
 m = input("teacher or student mode?").lower()
 
-if m == "teacher mode":
+if "teacher" in m:
     p = input("input ; to stop, use : to separate word and answer ").split(":")
-    while ";" in p == False:
+    while p != ";":
         fc.append(p)
         p = input("next ")
 
+print(fc)
 
-
-
-with open("FlashCards.json", 'w') as file:
-    json.dump(fc, file, indent = 2)
