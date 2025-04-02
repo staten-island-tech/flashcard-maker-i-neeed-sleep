@@ -9,18 +9,17 @@ except FileNotFoundError:
 
 class t:
     def __init__(s, w, d):
-        s.wrd = w
-        s.df = d
-    def d(s):
-        return{s.wrd:s.df}
+        s.w = w
+        s.d = d
+    def re(s):
+        return{s.w:s.d}
 
 m = input("teacher or student mode?").lower()
 
 if "teacher" in m:
-    p = input("input ; to stop, use : to separate word and answer ").split(":")
+    p = t(input("input ; to stop, use : to separate word and answer ").split(":"))
     while p != ";":
-        fc.append(p)
+        fc.append(p.re())
         p = input("next ")
 
 print(fc)
-
