@@ -17,9 +17,9 @@ class t:
 m = input("teacher or student mode?").lower()
 
 if "teacher" in m:
-    p = t(input("input ; to stop, use : to separate word and answer ").split(":"))
+    p = input("input ; to stop, use : to separate word and answer ").split(":")
     while p != ";":
-        fc.append(p.re())
+        fc.append(t.re(p))
         p = input("next ")
 
 print(fc)
