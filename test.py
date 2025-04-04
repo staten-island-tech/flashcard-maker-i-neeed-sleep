@@ -8,17 +8,23 @@ except FileNotFoundError:
     fc = []
 
 class t:
-    def __init__(s, w, d):
-        s.w = w
-        s.d = d
-    def re(s):
-        return f"{s.w}:{s.d}"
+    def __init__(self, x=[]):
+        w = x[0]
+        d = x[-1]      
+        self.w = w
+        self.d = d
 
+    def display_info(self):
+         return f"{self.w} {self.d}"
 
-e = input("ee ")
+    def re(self):
+        return {"Wrd": self.w, "Def": self.d}
 
-e = t(e)
+fc = []
 
-fc.append(e.re)
+e = t([input("ee ").split(":")])
+print(e.re())
 
-print(fc)
+e = t('tired','sleep')
+
+print(e.re())
