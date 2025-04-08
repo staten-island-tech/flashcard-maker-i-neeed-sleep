@@ -4,22 +4,21 @@ import random
 try:
     with open("FlashCards.json", "r") as file:
         fc = json.load(file)
-except FileNotFoundError:
+except:
     fc = []
 
-class t:
-    def __init__(s, w, d):
-        s.w = w
-        s.d = d
-    def re(s):
-        return{s.w:s.d}
 
 m = input("teacher or student mode?").lower()
 
 if "teacher" in m:
-    p = input("input ; to stop, use : to separate word and answer ").split(":")
+    p = input("input ; to stop, use : to separate word and answer ")
     while p != ";":
-        fc.append(t.re(p))
+        p = p.split(":")
+        fc.append({"w":p[0],"d":p[1]})
         p = input("next ")
 
-print(fc)
+if "student" in m:
+    a = input()
+
+with open("FlashCard.json", "w") as file:
+     json.dump(fc, file, indent=2)

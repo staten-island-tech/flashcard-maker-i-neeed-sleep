@@ -1,0 +1,14 @@
+[
+  {
+    "w": "tired",
+    "d": "go to sleep"
+  },
+  {
+    "w": "hungry",
+    "d": "go eat food"
+  },
+  {
+    "w": "thirsty",
+    "d": "go drink some water"
+  }
+]
