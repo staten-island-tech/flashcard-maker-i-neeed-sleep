@@ -11,6 +11,7 @@ except:
 m = input("teacher or student mode?").lower()
 s = 0
 
+
 if "teacher" in m:
     p = input("input ; to stop, use : to separate word and answer ")
     while p != ";":
@@ -19,7 +20,7 @@ if "teacher" in m:
         p = input("next ")
 
 if "student" in m:
-    x = random.choice(fc)
+    
     a = input()
 
 with open("FlashCard.json", "w") as file:
