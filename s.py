@@ -7,12 +7,7 @@ try:
 except:
     fc = []
 
+s = 0
 
-
-    x = random.choice(fc.items())
-    a = input(x["w"])
-    for x in fc:
-        if a in fc.values(x):
-            print("EY")
-            s += 1
+m = input("teacher or student mode?").lower()
 

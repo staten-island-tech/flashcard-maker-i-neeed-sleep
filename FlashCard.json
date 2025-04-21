@@ -1,14 +1,14 @@
 [
   {
     "w": "tired",
-    "d": "go to sleep"
+    "d": "sleep"
   },
   {
     "w": "hungry",
-    "d": "go eat food"
+    "d": "eat"
   },
   {
-    "w": "thirsty",
-    "d": "go drink some water"
+    "w": "bored",
+    "d": "do something"
   }
 ]
