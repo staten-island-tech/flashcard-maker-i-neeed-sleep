@@ -26,6 +26,7 @@ if "teacher" in m:
         json.dump(fc, file, indent=2)
 
 if "student" in m:
+    pts = 0
     while a != ";":
         x = random.choice(pfc)
         a = input(f"{x["w"]}(input ; to stop)")
@@ -33,8 +34,12 @@ if "student" in m:
             if a == x["d"]:
                 print("Correct. ")
                 s += 1
+                pts += 1
             else:
                 s = 0
                 print("Incorrect. ")
-            if s%5 == 0:
+                print(f"Your score was {pts}.  ")
+                pts = 0
+            if s%5 == 0 and s > 0:
                 print(f"You have a streak of {s}")
+                pts += 5
